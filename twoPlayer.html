@@ -20,10 +20,14 @@
     <div id="main-container">
         <div id="container">
             <div>
-                <button id="start-again">A</button>
+                <button id="start">Start</button>
             </div>
+            <form>
+                <label for "target" id="target-label">Choose target number:</label>
+                <input type="text" name="target" id="target-number">
+            </form>
             <div>
-                <h1 id="heading">Player 1</h1>
+                <h1 id="heading">Player 1's turn</h1>
             </div>
             <div class="scoreboard">
                 <div>
@@ -37,7 +41,8 @@
                 <img src="images/dice1.png" id="dice-img">
             </div>
             <div>
-                <button id="roll">Roll</button>
+                <button id="roll" class="play-button">Roll</button>
+                <button id="call" class="play-button">Call</button>
             </div>
         </div>
     </div>
