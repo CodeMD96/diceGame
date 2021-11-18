@@ -6,7 +6,7 @@ const heading = document.getElementById("heading");
 const scoreCards = document.getElementsByClassName("scorecard");
 const diceImg = document.getElementById("dice-img")
 const roll = document.getElementById("roll");
-const call = document.getElementById("call");
+const hold = document.getElementById("hold");
 
 let currentPlayer = 0;
 let scores = [0, 0];
@@ -47,11 +47,11 @@ roll.addEventListener("click", () =>{
         start.style.display = "block";
         target.style.display = "block";
         roll.style.display = "none";
-        call.style.display = "none";
+        hold.style.display = "none";
     };
 });
 
-call.addEventListener("click", () =>{
+hold.addEventListener("click", () =>{
     playerChange();
 })
 
@@ -71,6 +71,6 @@ start.addEventListener("click", () =>{
     start.style.display = "none";
     target.style.display = "none";
     roll.style.display = "block";  
-    call.style.display = "block";
+    hold.style.display = "block";
     };
 });

@@ -16,6 +16,7 @@ button {
     border: solid slateblue 2px;
     border-radius: 10%;
     font-size: 20px;
+    margin: 10px;
 }
 
 #container {
@@ -37,7 +38,7 @@ button {
     padding: 15px;
 }
 
-.scoreboard {
+.content-row {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
